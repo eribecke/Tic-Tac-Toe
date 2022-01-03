@@ -11,10 +11,7 @@ def tic_table(table):
         if count%2 == 0:
             p1 = str(input("Player 1, please indicate which spot on the board you would like to take. Options: TopL, TopM, TopR, MidL, MidM, MidR, BotL, BotM, BotR: "))
             if p1 == "TopL":
-                try:
-                    table[0][0] = "X"
-                except table[0][0] != "-":
-                    print("This spot is already taken.")
+                table[0][0] = "X"
             if p1 == "TopM":
                 table[0][1] = "X"
             if p1 == "TopR":
